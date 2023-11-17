@@ -1,0 +1,210 @@
+/* font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Glass Antiqua', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Satisfy', cursive; */
+img {
+  border-radius: 50%;
+  width: 15%;
+  margin-bottom: 20px;
+  filter: drop-shadow(2px 2px 5px rgb(185, 177, 208));
+}
+.bio:hover{
+  color: bisque;
+  font-size: 24px;
+  transition: all 0.5s ease-in-out;
+
+}
+a button{
+  color: white;
+  text-decoration: none;
+  font-family: 'Playpen Sans', cursive;
+}
+button {
+  background: transparent;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  perspective: 30rem;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.308);
+}
+.bx{
+  font-size: 25px;
+}
+button::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(320deg, rgba(0, 140, 255, 0.678), rgba(128, 0, 128, 0.308));
+  z-index: 1;
+  transition: background 3s;
+}
+
+button:hover::before {
+  animation: rotate 1s;
+  transition: all .5s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+ol,
+ul,
+li {
+  color: white;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 2px;
+}
+.title {
+  background-image: url(images/service-bg.png);
+  padding: 20px;
+}
+.title img {
+  width: 4%;
+  position: relative;
+  top: 50px;
+  left: -120px;
+}
+.title h1 {
+  color: #ab44e6;
+  font-family: "Satisfy", cursive;
+  font-size: 60px;
+}
+.title h1:hover{
+  color: #ab44e6;
+  font-size: 80px;
+  transition: all 0.5s ease-in-out;
+}
+.srija:hover{
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+
+}
+.bio{
+  color: white;
+  font-size: 20px;
+}
+* {
+  margin: 0;
+}
+body {
+  text-align: center;
+  font-family: "Glass Antiqua", cursive;
+  background-image: url(images/Vector7.png);
+  background-color: #000814;
+  background-image: url(images/service-bg.png);
+}
+
+
+
+
+h2 {
+  color: #5975bd;
+  font-family: "Edu TAS Beginner", cursive;
+  font-size: 55px;
+  text-decoration: underline;
+}
+h2:hover{
+  color: #5975bd;
+  font-size: 70px;
+  transition: all 0.5s ease-in-out;
+
+}
+.astro1 {
+  height: 500px; /* Adjust the height as needed */
+  width: auto;
+  position: absolute; /* Change to absolute positioning */
+  left: 65%; /* Center horizontally */
+  bottom: -620px; /* Adjust the distance from the bottom */
+  animation: float 3s infinite;
+}
+
+.astro2 {
+  height: 550px; /* Adjust the height as needed */
+  width: auto;
+  position: absolute; /* Change to absolute positioning */
+  right: 65%; /* Center horizontally */
+  bottom: -300px; /* Adjust the distance from the bottom */
+  animation: float 3s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-18px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+table {
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px dotted #5975bd;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 8px;
+  text-align: left;
+}
+.srija{
+  border: 6px double white;
+}
+footer{
+  background-color: #5e7bc7;
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 20px;
+
+
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .table{
+    padding: 15px;
+  }
+  .mobile{
+    display: inline;
+  }
+  .title img{
+    width: 15%;
+    position: relative;
+    top: 65px;
+  }
+  .srija{
+    height: 200px;
+    width: 200px;
+  }
+  .astro1, .astro2{
+    height: 140px;
+  }
+  .astro1{
+    top: 640px;
+  }
+  .astro2{
+    top: 320px;
+  }
+}
